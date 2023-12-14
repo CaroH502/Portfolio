@@ -1,6 +1,6 @@
 ---
-title: John Doe
-image: /images/authors/john-doe.jpg
+title: Caroline Hache
+image: /images/authors/caroline-hache.jpg
 description: this is meta description
 social:
   facebook: https://www.facebook.com/
