@@ -1,0 +1,23 @@
+---
+import config from "@config/config.json";
+import Base from "@layouts/Base.astro";
+import { getEntryBySlug } from "astro:content";
+
+const entry = await getEntryBySlug("pages", "contact");
+const { title, description, meta_title, image } = entry.data;
+---
+
+<Base
+  title={title}
+  meta_title={meta_title}
+  description={description}
+  image={image}
+>
+  <section class="section">
+    <div class="container">
+      <h1 set:html= "Mes projets" class="h2 page-heading" />
+      <p>Création d'une page : /src/pages/projets.astro</p>
+      </div>
+    </div>
+  </section>
+</Base>
