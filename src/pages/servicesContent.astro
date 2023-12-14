@@ -1,0 +1,32 @@
+---
+import { getEntryBySlug } from "astro:content";
+
+const entry = await getEntryBySlug("services", "index");
+const { Content } = await entry.render();
+const { title, description, meta_title, image, what_i_do } = entry.data;
+
+
+---
+  <section class="section">
+    <div class="container">
+      <div class="content">
+        <Content />
+        <section class="section pt-0">
+            <div class="container">
+              <h3 class="page-heading mb-8">{what_i_do.title}</h3>
+              <div class="row justify-center gy-4 text-center">
+                {what_i_do.items.map((item: any) => (
+                  <div class="lg:col-4 md:col-6">
+                    <i class="{{.icon}} fa-3x text-primary mb-4"></i>
+                    <h4 class="text-dark font-weight-700 mb-3">{item.title}</h4>
+                    <p>{item.description}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+      </div>
+      </div>
+    </div>
+  </section>
+
