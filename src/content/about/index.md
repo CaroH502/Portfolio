@@ -1,5 +1,5 @@
 ---
-title: "I’m Caroline - /src/content/about/index.md"
+
 meta_title: "About"
 image: "/images/author.png"
 draft: false
@@ -17,7 +17,9 @@ what_i_do:
     description: "Aenean maximus urna magna elementum venenatis, quis semper non purus eget ipsum venenatis."
 
 ---
+## Qui suis-je ?
+Hello, je m'appelle Caroline
 
-A content writer with over 12 years experience working across brand identity, publishing and digital products. Maecenas sit amet purus eget ipsum elementum venenatis. Aenean maximus urna magna elementum venenatis quis non purus.
+### Ikigai
 
-Purus eget ipsum elementum venenatis. Aenean maximus urna magna elementum venenatis, quis rutrum mi semper non purus eget ipsum elementum venenatis, aenean maximus urna magna elementum.
+### Création de ce site
