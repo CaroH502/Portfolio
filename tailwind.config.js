@@ -39,6 +39,12 @@ module.exports = {
     },
     extend: {
       colors: {
+        corail:{
+          '100' : '#F36280'
+        },
+        jaune:{
+          '100':'#FFE497'
+        },
         text: theme.colors.default.text_color.default,
         light: theme.colors.default.text_color.light,
         dark: theme.colors.default.text_color.dark,

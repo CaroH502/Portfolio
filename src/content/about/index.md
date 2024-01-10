@@ -17,8 +17,6 @@ what_i_do:
     description: "Aenean maximus urna magna elementum venenatis, quis semper non purus eget ipsum venenatis."
 
 ---
-## Qui suis-je ?
-Hello, je m'appelle Caroline
 
 ### Ikigai
 
