@@ -5,19 +5,20 @@ image: "/images/author.png"
 draft: false
 
 what_i_do:
-  title: "What I Do"
   items:
-  - title: "Content Writing"
-    description: "Purus eget ipsum elementum venenatis, quis rutrum mi semper nonpurus eget ipsum elementum venenatis."
+  - title: "Expertise"
+    description: "HTML/CSS - Tailwind - JavaScript - Vue.js - Node.js - WordPress - d3 - ionic"
   
-  - title: "Photography"
-    description: "Aenean maximus urna magna elementum, quis rutrum mi semper non purus eget ipsum venenatis."
+  - title: "Tech Tools"
+    description: "GitHub - VsCode- Figma - Illustrator - PhotoShop - InDesign"
   
-  - title: "Web Research"
-    description: "Aenean maximus urna magna elementum venenatis, quis semper non purus eget ipsum venenatis."
 
 ---
 
 ### Ikigai
 
 ### Création de ce site
+J'ai crée ce portfolio à partir du framework astro, car celui-ci à différents avantages :
+- Amélioration des performances du chargement initial et de la navigation.
+- Simplification du développement front-end en favorisant la modularité.
+- Contribution à une empreinte carbone réduite grâce à une approche "moins de JavaScript".
