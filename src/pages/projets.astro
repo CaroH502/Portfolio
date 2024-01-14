@@ -26,7 +26,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
           {projects.map((project: any) => (
             <article class="mb-12">
-              <div class={`shadow-xl mx-auto bg-${project.color}-100 transform duration-500 hover:-translate-y-2 cursor-pointer rounded-md`}>                
+              <div class={`projet shadow-xl mx-auto bg-${project.color}-100 transform duration-500 hover:-translate-y-2 cursor-pointer rounded-md`}>                
                 <img src={project.image} class="mt-0 rounded max-w-full h-auto" alt={`Image of ${project.title}`} />
                 <div class="p-6">
                 <h1 class="text-3xl md:text-4xl font-extrabold text-gray-800 mb-4">{project.title}</h1>
@@ -54,3 +54,10 @@
       </div>
     </section>
   </Base>
+
+  <style>
+    .projet { /* Remplacez .article-class par la classe réelle de vos articles */
+    cursor: default !important;
+}
+
+  </style>
