@@ -1,18 +1,24 @@
 ---
 projects:
   - title: "PassPress"
+    image: "../../public/images/dragon1.png"
+    color: "orange"
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
     tech: "Figma"
     role: "UX Design, UI Dev"
     year: "2023"
 
   - title: "AMP"
+    image: "../../public/images/dragon2.png"
+    color: "red"
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
     tech: "React"
     role: "Frontend Development"
     year: "2022"
 
   - title: "Couleur3"
+    image: "../../public/images/dragon3.png"
+    color: "yellow"
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
     tech: "Vue"
     role: "Full Stack Development"
