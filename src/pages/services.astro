@@ -1,36 +1,84 @@
----
-import Base from "@layouts/Base.astro";
-import { getEntryBySlug } from "astro:content";
+    ---
+    import Base from "@layouts/Base.astro";
+    import { getEntryBySlug } from "astro:content";
 
-const entry = await getEntryBySlug("services", "index");
-const { Content } = await entry.render();
-const { title, description, meta_title, image, what_i_do } = entry.data;
+    const entry = await getEntryBySlug("services", "index");
+    const { Content } = await entry.render();
+    const { title, description, meta_title, image, what_i_do } = entry.data;
 
 
----
+    ---
 
-<Base>
-<section class="section">
-<div class="container">
-    <div class="content">
-    <Content />
-    <section class="section pt-0">
-        <div class="container">
-            <h2 class="text-corail-100 text-left mb-8">{what_i_do.title}</h3>
-            <div class="row justify-center gy-4 text-center">
-            {what_i_do.items.map((item: any) => (
-                <div class="lg:col-4 md:col-6">
-                <i class="{{.icon}} fa-3x text-primary mb-4"></i>
-                <h4 class="text-dark font-weight-700 mb-3">{item.title}</h4>
-                <p>{item.description}</p>
-                </div>
-            ))}
+    <Base>
+    <section class="section">
+    <div class="container">
+        <div class="content">
+        <Content />
+        <section class="section pt-0 pb-0">
+            <div class="container">
+                <h2 class="text-corail-100 text-left mb-8">{what_i_do.title}</h3>
+                    <p class="text-justify mb-0">En tant que passionnée d'interfaces, je vous offre deux services distincts,
+                        mais complémentaires : la Conception d'Interfaces, permettant de 
+                        transformer vos visions en expériences utilisateur harmonieuses et captivantes; et 
+                        le Développement Web, où mon expertise technique insuffle vie et dynamisme à 
+                        ces designs. 
+                        <br> <br>
+                        Chaque projet est pour moi une nouvelle aventure permettant d'exprimer ma créativité et mon savoir-faire technique à travers vos idées.</p>
+                        <div class="text-center">
+                            <img class=" h-36 w-28" src="../../public/images/dragon2.png" alt="dargon"/>
+                        </div>
+
+                        <div class="container mx-auto px-4">
+                            <div class="flex flex-col md:flex-row">
+                                <!-- Colonne 1 -->
+                                <div class="md:w-1/2">
+                                    <h2 class="text-corail-100 mb-6 text-center text-xl font-bold">Conception d'interfaces</h2>
+                                    <p class="text-center mt-2">
+                                        Pour concevoir une interface intelligente et adaptée à vos cibles, il est nécessaire passer tout d'abord par une succession de phase appelé 'UX'(User Experience) pui s'UI' (User Interface).
+                                        <br>
+                                         L'UX, c'est un domaine rendant chaque interaction intuitive et fluide, pensant au parcours de l'utilisateur dans son ensemble. 
+                                         <br>
+                                         L'UI, c'est là où la créativité s'exprime : le choix des couleurs, la typographie, et les maquettes d'interfaces.
+                                         <br>
+                                         Ces deux aspects sont essentiels : ils transforment un simple outil numérique en une expérience agréable et mémorable pour l'utilisateur. C'est cette alchimie entre fonctionnalité et esthétique qui me passionne tant.
+                                    </p>
+                                </div>
+                        
+                                <!-- Colonne 2 -->
+                                <div class="md:w-1/2 mt-4 md:mt-0 md:ml-4">
+                                    <h2 class="text-corail-100 mb-6 text-xl text-center font-bold">Developpement web & mobile</h2>
+                                    <p class="text-center mt-2">
+                                        Le développement front-end permet de donner vie aux conceptions UX/UI. Le front-end, pour moi, c'est l'art de transformer des designs en réalité interactive : j'écris le code qui anime chaque élément visuel, assure une réactivité fluide et maintient la cohérence sur différents appareils. 
+                                        <br>
+                                        C'est un processus créatif et technique, où je jongle avec diverses technologies frontend afin de créer des expériences qui non seulement semblent bonnes, mais se sentent aussi naturelles à l'utilisateur. 
+                                        <br>
+                                        Pour moi, c'est cette fusion entre technicité et esthétique qui rend le développement front-end si captivant.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                <!-- <div class="row justify-center gy-4 text-center ">
+                {what_i_do.items.map((item: any) => (
+                    <div class="lg:col-4 md:col-6">
+                    <i class="{{.icon}} fa-3x text-primary mb-4"></i>
+                    <h4 class="text-dark font-weight-700 mb-3">{item.title}</h4>
+                    <p>{item.description}</p>
+                    </div>
+                ))}
+                </div> -->
             </div>
+            </section>
+            <p class="text-justify">
+                Si vous cherchez à transformer vos idées en réalités numériques captivantes et fonctionnelles, 
+                je suis la personne idéale pour vous accompagner dans cette aventure créative. 
+                N'hésitez pas, embarquez dans ce voyage de transformation digitale avec moi
+            </p>
+            <div class=" flex justify-center mt-16">
+            <a href="/contact" class="btn btn-primary text-white py-2">Get In Touch</a>
         </div>
-        </section>
-        <a href="/contact" class="btn btn-primary text-white py-2">Get In Touch</a>
-
+        </div>
     </div>
-</div>
-</section>
-</Base>
+    </section>
+    </Base>

@@ -7,7 +7,7 @@ draft: false
 what_i_do:
   items:
   - title: "Expertise"
-    description: "HTML/CSS - Tailwind - JavaScript - Vue.js - Node.js - WordPress - d3 - ionic"
+    description: "HTML/CSS - Tailwind - JavaScript - Vue.js - Node.js - WordPress - d3 - ionic - Laravel"
   
   - title: "Tech Tools"
     description: "GitHub - VsCode- Figma - Illustrator - PhotoShop - InDesign"
