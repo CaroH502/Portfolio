@@ -8,6 +8,22 @@ projects:
     role: "UX Design, UI Dev"
     year: "2023"
 
+  - title: "Couleur3"
+    image: "../../public/images/couleur3-affiche.png"
+    color: "yellow"
+    description: "Projet à but de rendre la radio Couleur 3 plus interactive, d'amener les auditeurs à interagir davantage"
+    tech: "Vue.js, Tailwind, Axios, Laravel, Docker"
+    role: "Frontend Dev"
+    year: "2023"
+    
+  - title: "VisualDon"
+    image: "../../public/images/feu-canada.png"
+    color: "orange"
+    description: "Rendre la visualisation de données, en l'occurence ici les feux de forêt au Canada, interactif et passionant pour les internautes"
+    tech: "Javascript, d3, HTML, CSS"
+    role: "Full"
+    year: "2023"
+
   - title: "AMP"
     image: "../../public/images/amp.png"
     color: "red"
@@ -16,18 +32,6 @@ projects:
     role: "UX Design, UI Dev"
     year: "2023"
 
-  - title: "Couleur3"
-    image: "../../public/images/couleur3-affiche.png"
-    color: "yellow"
-    description: "Projet à but de rendre la radio Couleur 3 plus interactive, d'amener les auditeurs à interagir davantage"
-    tech: "Vue.js, Tailwind, Axios, Laravel, Docker"
-    role: "Frontend Dev"
-    year: "2023"
 
-  - title: "VisualDon"
-    image: "../../public/images/amp.png"
-    color: "orange"
-    description: "Rendre la visualisation de données, en l'occurence ici les feux de forêt au Canada, interactif et passionant pour les internautes"
-    tech: "Javascript, d3, HTML, CSS"
-    role: "Full"
-    year: "2023"
+
+
