@@ -1,36 +1,48 @@
----
-import config from "@config/config.json";
-import Base from "@layouts/Base.astro";
-import { getEntryBySlug } from "astro:content";
-
-const entry = await getEntryBySlug("pages", "contact");
-const { title, description, meta_title, image } = entry.data;
----
-
-<Base
-title={title}
-meta_title={meta_title}
-description={description}
-image={image}
->
-<section class="section">
-  <div class="container">
-    <div class="flex justify-between">
-    <h2 set:html= "Les projets réalisés à ce jour" class="h2 text-corail-100 text-left mb-8" />
-      <img class="h-36 w-28" src="../../public/images/dragon3.png" alt="dargon"/>
-
-  </div>
-    <p>Création d'une page : /src/pages/projets.astro</p>
-    <div>
-      <div class="flex flex-col lg:flex-row rounded overflow-hidden h-auto lg:h-48 border shadow shadow-lg">
-        <img class="block h-auto w-full lg:w-48 flex-none bg-cover h-24" src="https://pbs.twimg.com/media/DrM0nIdU0AEhG5b.jpg">
-        <div class="bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-          <div class="text-black font-bold text-xl mb-2 leading-tight">Can life make you a bitter developer?</div>
-          <p class="text-grey-darker text-base">Read more</p>
-        </div>
+  ---
+  import Base from "@layouts/Base.astro";
+  import { getEntryBySlug } from "astro:content";
+  const entry = await getEntryBySlug("projects", "index");
+  import { markdownify } from "@lib/utils/textConverter";  
+  const { Content } = await entry.render();
+  const { title, description, meta_title, image, projects} = entry.data;
+  
+  ---
+  
+  <Base
+  title={title}
+  meta_title={meta_title}
+  description={description}
+  image={image}
+  >
+  
+  <section class="section">
+    <div class="container">
+      
+      <!-- Rendering Projects -->
+      <section class="container mx-auto p-10 md:py-20 px-0 md:p-20 md:px-0">
+        {projects.map((project:any) => (
+          <article class="grid lg:grid-cols-1 2xl:grid-cols-2 gap-10 antialiased  mb-24">
+            <div class="flex flex-col shadow-xl mx-auto max-w-lg bg-red-100 py-20 px-12 transform duration-500 hover:-translate-y-2 cursor-pointer max-h-190 rounded-md">
+              <h1 class="font-extrabold text-6xl mt-20 mb-6 text-gray-800">{project.title}</h1>
+              <p class="text-sm leading-relaxed text-gray-700">{project.description}</p>
+              <div class="flex flex-col md:flex-row md:space-x-2 mt-4">
+                <div class="flex-1">
+                  <h3 class="font-semibold">Tech</h3>
+                  <p>{project.tech}</p>
+                </div>
+                <div class="flex-1">
+                  <h3 class="font-semibold">Role</h3>
+                  <p>{project.role}</p>
+                </div>
+                <div class="flex-1">
+                  <h3 class="font-semibold">Year</h3>
+                  <p>{project.year}</p>
+                </div>
+              </div>
+            </div>
+          </article>
+          ))}
+        </section>
       </div>
-    </div>
-    </div>
-  </div>
-</section>
-</Base>
+    </section>   
+  </Base>
