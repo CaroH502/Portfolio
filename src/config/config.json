@@ -1,10 +1,10 @@
 {
   "site": {
-    "title": "Bookworm Light Astro | Blog Template",
+    "title": "Portfolio",
     "base_url": "https://bookworm-light-astro.vercel.app",
     "base_path": "/",
     "trailing_slash": false,
-    "favicon": "/images/favicon.png",
+    "favicon": "/images/logo1.png",
     "logo": "/images/logo1.png",
     "logo_width": "100",
     "logo_height": "60",
