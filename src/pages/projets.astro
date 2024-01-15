@@ -18,7 +18,7 @@
   <section class="section">
     <div class="container px-6">
       <div class="content">
-        <div class="flex justify-between">
+        <div class="flex justify-between mb-16 sm:mb-6">
           <h2 set:html= "Les projets réalisés à ce jour" class="h2 text-corail-100 text-left mb-8" />
           <img class="h-36 w-28" src="../../public/images/dragon3.png" alt="dargon"/>
         </div>
@@ -30,19 +30,19 @@
                 <img src={project.image} class="mt-0 rounded max-w-full h-auto" alt={`Image of ${project.title}`} />
                 <div class="p-6">
                 <h1 class="text-3xl md:text-4xl font-extrabold text-gray-800 mb-4">{project.title}</h1>
-                <p class="text-sm text-justify text-gray-700 mb-4">{project.description}</p>
+                <p class="text-sm text-justify text-gray-700 sm:mb-6 mb-12">{project.description}</p>
                 <div class="flex flex-col md:flex-row md:space-x-6">
-                  <div class="flex-1 mb-2 md:mb-0">
-                    <h3 class="font-semibold md:text-2xl">Tech</h3>
-                    <p>{project.tech}</p>
+                  <div class="sm:mb-2 flex-1 mb-2 md:mb-0">
+                    <h3 class="sm:my-0 font-semibold md:text-2xl">Tech</h3>
+                    <p class="sm:my-1">{project.tech}</p>
                   </div>
-                  <div class="flex-1 mb-2 md:mb-0">
-                    <h3 class="font-semibold md:text-2xl">Rôle</h3>
-                    <p>{project.role}</p>
+                  <div class="sm:mb-2 flex-1 mb-2 md:mb-0">
+                    <h3 class="sm:my-0 font-semibold md:text-2xl">Rôle</h3>
+                    <p class="sm:my-1">{project.role}</p>
                   </div>
-                  <div class="flex-1">
-                    <h3 class="font-semibold md:text-2xl">Année</h3>
-                    <p>{project.year}</p>
+                  <div class="sm:mb-2 flex-1 mb-2 md:mb-0">
+                    <h3 class="sm:my-0 font-semibold md:text-2xl">Année</h3>
+                    <p class="sm:my-1">{project.year}</p>
                   </div>
                 </div>
               </div>
