@@ -17,7 +17,9 @@ import About from './aboutContent.astro'
     <Services/>
     <Projets/>
     <About/>
-    <button id="scrollToTop">Remonter</button>
+    <button id="scrollToTop">
+      <img src="../../public/images/arrow-top.png" style="width: 35px; height: 35px;"/>
+    </button>
   </section>
 </Base>
 
@@ -40,8 +42,6 @@ import About from './aboutContent.astro'
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #007bff; /* Couleur de fond */
-    color: white; /* Couleur du texte */
     border: none;
     border-radius: 5px;
     padding: 10px;
