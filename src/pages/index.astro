@@ -1,15 +1,19 @@
 ---
 import Base from "@layouts/Base.astro";
 import Services from './servicesContent.astro';
+import Projets from './projetsContent.astro'
+import About from './aboutContent.astro'
 ---
 
 <Base>
-  <section class="section">
+  <section class=" section">
     <div class="container">
       <div>
-        <h1 class=text-left" set:html= "Salut mon nom est Caroline et je suis ingénieure des médias" class="h2 page-heading" />
+        <h2 set:html= "Salut mon nom est Caroline et je suis ingénieure des médias" class="h1  text-corail-100 text-left mb-8" />
       </div>
     </div>
     <Services/>
+    <Projets/>
+    <About/>
   </section>
 </Base>
