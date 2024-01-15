@@ -3,9 +3,11 @@ import Base from "@layouts/Base.astro";
 import Services from './servicesContent.astro';
 import Projets from './projetsContent.astro'
 import About from './aboutContent.astro'
+
 ---
 
 <Base>
+  
   <section class=" section">
     <div class="container">
       <div>
@@ -15,5 +17,36 @@ import About from './aboutContent.astro'
     <Services/>
     <Projets/>
     <About/>
+    <button id="scrollToTop">Remonter</button>
   </section>
 </Base>
+
+<!-- script -->
+
+<script type="module">
+  // Ce code ne s'exécutera que côté client après le chargement de la page
+  const button = document.getElementById('scrollToTop');
+
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  button.addEventListener('click', scrollToTop);
+</script>
+
+<!-- Style -->
+<style>
+  #scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+</style>
