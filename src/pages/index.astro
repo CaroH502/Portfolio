@@ -7,20 +7,30 @@ import About from './aboutContent.astro'
 ---
 
 <Base>
-  
-  <section class=" section">
+  <section class="section py-0">
     <div class="container">
-      <div>
-        <h2 set:html= "Salut mon nom est Caroline et je suis ingénieure des médias" class="h1  text-corail-100 text-left mb-8" />
+      <div class="content">
+        <h2 set:html= "Bienvenue sur mon Portfolio" class="h1 mt-24 mb-8 text-corail-100 text-left " />
+        <p class=" text-left ">Je suis Caroline et diplômée d'un Bachelor en tant qu'ingénieur des médias. 
+          Spécialisée dans tout ce qui touche à l'interface, notamment l'UX, l'UI et le développement front-end, 
+          je vous invite à explorer mon portfolio. Ici, vous pourrez en savoir davantage sur mes services, 
+          découvrir mes projets récents et apprendre qui je suis à travers ma section 'À propos'. 
+          </p>
+          <p>Bienvenue dans mon univers professionnel où la créativité rencontre la technologie </p>
       </div>
     </div>
-    <Services/>
-    <Projets/>
-    <About/>
-    <button id="scrollToTop">
-      <img src="../../public/images/arrow-top.png" style="width: 35px; height: 35px;"/>
-    </button>
-  </section>
+  </div>
+</section>
+
+</div>
+</div>
+<Services/>
+<Projets/>
+<About/>
+<button id="scrollToTop">
+  <img src="../../public/images/arrow-top.png" style="width: 35px; height: 35px;"/>
+</button>
+</section>
 </Base>
 
 <!-- script -->
@@ -28,11 +38,11 @@ import About from './aboutContent.astro'
 <script type="module">
   // Ce code ne s'exécutera que côté client après le chargement de la page
   const button = document.getElementById('scrollToTop');
-
+  
   function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
-
+  
   button.addEventListener('click', scrollToTop);
 </script>
 
