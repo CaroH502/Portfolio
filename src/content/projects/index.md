@@ -1,7 +1,7 @@
 ---
 projects:
   - title: "PassPress"
-    image: "../../public/images/passpress.png"
+    image: "/images/passpress.png"
     color: "orange"
     description: "Conception d'une interface intelligente et ciblée, afin de rassembler le paysage médiatique vaudois. Projet mandaté par LA TéLé VAUD FRIBOURG"
     tech: "Figma"
