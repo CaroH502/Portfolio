@@ -6,6 +6,7 @@
   const { Content } = await entry.render();
   const { title, description, meta_title, image, projects} = entry.data;
   import config from "../../src/config/config.json";
+  import dragon3 from "../images/dragon3.png";
   
   ---
   
@@ -21,7 +22,7 @@
       <div class="content">
         <div class="flex justify-between mb-16 sm:mb-6">
           <h2 set:html= "Les projets réalisés à ce jour" class="h2 text-corail-100 text-left mb-8" />
-          <img class="h-36 w-28" src={"../.."+config.site.base_path+"/images/dragon3.png"} alt="dargon"/>
+          <img class="h-36 w-28" src={dragon3.src} alt="dargon"/>
         </div>
         <!-- Rendering Projects -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
