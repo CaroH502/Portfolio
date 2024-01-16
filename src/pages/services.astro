@@ -6,7 +6,8 @@
     const { Content } = await entry.render();
     const { title, description, meta_title, image, what_i_do } = entry.data;
     
-    
+    import config from "../../src/config/config.json";
+    import dragon2 from "../images/dragon2.png";
     ---
     
     <Base
@@ -29,7 +30,7 @@
                                 <br> <br>
                                 Chaque projet est pour moi une nouvelle aventure permettant d'exprimer ma créativité et mon savoir-faire technique à travers vos idées.</p>
                                 <div class="text-center mb-8">
-                                    <img class="h-52 w-auto" src="../../public/images/dragon2.png" alt="dargon"/>
+                                    <img class="h-52 w-auto" src={dragon2.src} alt="dargon"/>
                                 </div>
                                 
                                 <div class="flex flex-col md:flex-row">

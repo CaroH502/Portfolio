@@ -7,6 +7,12 @@
         const entry = await getEntryBySlug("about", "index");
         const { Content } = await entry.render();
         const { title, description, meta_title, image, what_i_do } = entry.data;
+
+        import config from "../../src/config/config.json";
+        import dragon1 from "../images/dragon1.png";
+        import ikigai from "../images/ikigai.png";
+
+    
         ---
         
         <Base
@@ -30,7 +36,7 @@
                 
                 <!-- Colonne 2 : Image -->
                 <div class="w-full md:w-1/2 px-4 flex justify-center items-center">
-                  <img class="h-52 w-auto" src="../../public/images/dragon1.png" alt="dragon"/>
+                  <img class="h-52 w-auto" src={dragon1.src} alt="dragon"/>
                 </div>
               </div>
             </div>
@@ -42,7 +48,7 @@
               <p class="text-justify">De plus, lors d'un cours en Ingénierie des médias, j'ai pu confirmer mon choix d'être développeuse web front-end grâce au concepet japonais d'ikigai.
                 Je vous laisse le découvrir pour en savoir davantage sur les différentes composantes de ma “raison d'être” et “joie de vivre” (traduction d'ikigai).</p>
               <div>
-                <img class="my-12" src="../../public/images/ikigai.png"/>
+                <img class="my-12" src={ikigai.src}/>
               </div>
             </div>
             </section>
