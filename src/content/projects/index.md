@@ -29,7 +29,7 @@ projects:
     color: "orange"
     description: "Rendre la visualisation de données, en l'occurence ici les feux de forêt au Canada, interactif et passionant pour les internautes, Projet scolaire permettant d'appréhender d3"
     tech: "Javascript, d3, HTML, CSS"
-    role: "Full"
+    role: "FullStack"
     year: "2023"
 
 
