@@ -6,6 +6,7 @@ import { getEntryBySlug } from "astro:content";
 import config from "@config/config.json";
 import dragon2 from "../images/dragon2.png";
 
+
 const entry = await getEntryBySlug("about", "index");
 const { Content } = await entry.render();
 const { title, description, meta_title, image, what_i_do } = entry.data;

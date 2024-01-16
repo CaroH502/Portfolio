@@ -5,6 +5,8 @@ const entry = await getEntryBySlug("projects", "index");
 import { markdownify } from "@lib/utils/textConverter";  
 const { Content } = await entry.render();
 const { title, description, meta_title, image, projects} = entry.data;
+import config from "../../src/config/config.json";
+import dragon3 from "../images/dragon3.png";
 
 ---
 
@@ -14,14 +16,14 @@ const { title, description, meta_title, image, projects} = entry.data;
     <div class="content">
       <div class="flex justify-between mb-16 sm:mb-6">
         <h2 set:html= "Les projets réalisés à ce jour" class="h2 text-corail-100 text-left mb-8" />
-        <img class="h-36 w-28" src="../../public/images/dragon3.png" alt="dargon"/>
+        <img class="h-36 w-28" src={dragon3.src} alt="dargon"/>
       </div>
       <!-- Rendering Projects -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         {projects.map((project: any) => (
           <article class="mb-12">
             <div class={`projet shadow-xl mx-auto bg-${project.color}-100 transform duration-500 hover:-translate-y-2 cursor-pointer rounded-md`}>                
-              <img src={project.image} class="mt-0 rounded max-w-full h-auto" alt={`Image of ${project.title}`} />
+              <img src={config.site.base_path + project.image} class="mt-0 rounded max-w-full h-auto" alt={`Image of ${project.title}`} />
               <div class="p-6">
               <h1 class="text-3xl md:text-4xl font-extrabold text-gray-800 mb-4">{project.title}</h1>
               <p class="text-sm text-justify text-gray-700 sm:mb-6 mb-12">{project.description}</p>

@@ -4,6 +4,8 @@ import Services from './servicesContent.astro';
 import Projets from './projetsContent.astro'
 import About from './aboutContent.astro'
 import config from "@config/config.json";
+import arrow from "../images/arrow-top.png";
+
 
 ---
 
@@ -35,7 +37,7 @@ import config from "@config/config.json";
 <Projets/>
 <About/>
 <button id="scrollToTop">
-  <img src="../../public/images/arrow-top.png" style="width: 35px; height: 35px;"/>
+  <img src={arrow.src} style="width: 35px; height: 35px;"/>
 </button>
 </section>
 </Base>
