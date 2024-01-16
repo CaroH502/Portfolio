@@ -1,9 +1,12 @@
 ---
+import config from "@config/config.json";
 const { section, currentPage, totalPages } = Astro.props;
 
 const indexPageLink = currentPage === 2;
 const hasPrevPage = currentPage > 1;
 const hasNextPage = totalPages > currentPage;
+
+
 
 let pageList = [];
 for (let i = 1; i <= totalPages; i++) {
@@ -19,8 +22,8 @@ totalPages > 1 && (
 <a
   href={
     indexPageLink && currentPage === 2
-      ? `${section ? "/" + section : "/articles"}`
-      : `${section ? "/" + section : ""}/page/${currentPage - 1}`
+      ? `${section ? "/" + section : ""}${config.site.base_path}/articles`
+      : `${section ? "/" + section : ""}${config.site.base_path}/page/${currentPage - 1}`
   }
   class="border border-primary hover:bg-primary hover:text-white rounded-md h-10 w-10 leading-[36px] font-semibold text-dark flex items-center justify-center transition duration-200"
 >
@@ -72,8 +75,8 @@ pagination === currentPage ? (
   <a
     href={
       pagination === 1 // Ajoutez cette condition pour la page 1
-        ? `${section ? "/" + section : "/articles"}`
-        : `${section ? "/" + section : ""}/page/${pagination}`
+        ? `${section ? "/" + section : ""}${config.site.base_path}/articles`
+        : `${section ? "/" + section : ""}${config.site.base_path}/page/${pagination}`
     }
     aria-current="page"
     class={`border border-primary hover:bg-primary hover:text-white rounded-md h-10 w-10 leading-[36px] font-semibold text-dark flex items-center justify-center transition duration-200`}
@@ -87,7 +90,7 @@ pagination === currentPage ? (
     {/* next page */}
     {hasNextPage ? (
       <a
-        href={`${section ? "/" + section : ""}/page/${currentPage + 1}`}
+        href={`${section ? "/" + section : ""}${config.site.base_path}/page/${currentPage + 1}`}
         class="border border-primary hover:bg-primary hover:text-white rounded-md h-10 w-10 leading-[36px] font-semibold text-dark flex items-center justify-center transition duration-200"
       >
         <span class="sr-only">Next</span>
