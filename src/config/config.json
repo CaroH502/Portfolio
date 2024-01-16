@@ -1,8 +1,8 @@
 {
   "site": {
     "title": "Portfolio",
-    "base_url": "https://bookworm-light-astro.vercel.app",
-    "base_path": "/",
+    "base_url": "https://CaroH502.github.io",
+    "base_path": "/Portfolio",
     "trailing_slash": false,
     "favicon": "/images/logo1.png",
     "logo": "/images/logo1.png",
