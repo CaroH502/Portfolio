@@ -1,5 +1,5 @@
 ---
-title: "Comment utiliser facilement vos composants Figma ?"
+title: "Que sont les variables dans Figma ?"
 description: "meta description"
 image: "/images/posts/044.jpg"
 date: 2023-11-23T16:56:47+06:00
@@ -9,30 +9,47 @@ tags: ["Figma", "UX", "UI"]
 categories: ["UX","UI"]
 ---
 
-L'article aborde des stratégies spécifiques pour améliorer l'utilisation des composants Figma, en se concentrant sur les besoins des utilisateurs finaux et la gestion efficace des composants dans des équipes de conception en expansion. Voici un détail approfondi des sept points clés présentés dans l'article :
+# Les variables figma
+## Introduction
+Avec l'introduction des variables dans Figma en 2023, le monde du design d'interface utilisateur et d'expérience utilisateur (UI/UX) a connu une révolution significative. Ces variables offrent une flexibilité et une efficacité accrues, permettant aux designers de créer des prototypes interactifs et des designs responsifs avec une facilité sans précédent. Cet article explore en profondeur comment ces innovations ont transformé les pratiques de design.
 
+## Révolution dans le Prototypage avec les Variables Figma
+### Simplification des Prototypes
+L'intégration des variables a radicalement simplifié le processus de prototypage. Auparavant, chaque interaction, comme un changement de score ou de nombre, nécessitait la création d'un nouvel écran. Maintenant, avec l'usage des variables, ces modifications peuvent être effectuées dynamiquement. Cela signifie qu'un simple clic peut incrémenter une valeur, et des conditions peuvent être appliquées pour empêcher des résultats indésirables, comme des valeurs négatives.
 
-## Stratégie
-La première stratégie met en avant l'importance d'afficher la valeur par défaut de chaque propriété de composant, étant donné la diversité des variantes possibles. L'auteur recommande de positionner les valeurs par défaut dans le coin supérieur gauche du canevas, assurant ainsi que la variante la plus couramment utilisée soit affichée par défaut lors du glisser-déposer du composant.
+### Réalisme et Interaction
+Les variables ont également accru le réalisme des prototypes. Les designers peuvent maintenant créer des interfaces qui réagissent en temps réel aux actions des utilisateurs, offrant une expérience beaucoup plus immersive et informative lors des tests d'usabilité. Cette capacité à simuler des interactions complexes sans quitter l'environnement de Figma est un avantage majeur.
 
-### Ordre
-L'article souligne qu'en plus de l'emplacement sur le canevas, l'ordre des valeurs de propriété dans le panneau des propriétés peut être ajusté manuellement. Cela permet de déterminer la variante par défaut, offrant ainsi une flexibilité accrue pour répondre aux besoins spécifiques des utilisateurs.
+## Innovation dans le Design Responsif
+### Gestion des Breakpoints
+Un autre domaine où les variables Figma brillent est la gestion des breakpoints dans le design responsif. Les designers peuvent désormais définir des variables pour des contraintes de largeur minimale et maximale, ainsi que pour des marges, des paddings et des gouttières. Cette approche offre une grande souplesse dans la création de designs qui s'adaptent parfaitement à différents appareils et tailles d'écran.
 
-### Composants
-L'utilisation de la fonctionnalité Component Props de Figma est présentée comme une avancée majeure. Cette fonctionnalité réduit le nombre de variantes à gérer, simplifiant la vie du créateur de composants, mais aussi allégeant la "charge" du composant pour des temps de chargement plus rapides et une expérience utilisateur améliorée.
+### Application dans les Systèmes de Design
+L'intégration des variables dans les systèmes de design a permis une gestion plus efficace des modes de couleur et des thèmes de marque. Les designers peuvent ajuster facilement ces éléments à travers différents composants et écrans, assurant une cohérence visuelle tout en économisant du temps et des efforts.
 
-Pour rendre l'exploration des composants plus efficace, l'article recommande de masquer les composants qui ne devraient pas être utilisés de manière isolée ou qui sont considérés comme des conceptions obsolètes. Cela contribue à simplifier l'interface utilisateur et à rendre la recherche de composants plus efficace.
+## Cas Pratiques et Applications
+### Scénarios d'Utilisation
+Les variables trouvent leur utilité dans une multitude de scénarios. Par exemple, un système de points dans un jeu peut être facilement géré avec une variable, de même que l'affichage conditionnel de certains éléments en fonction des actions de l'utilisateur.
 
-### Nommage
-L'article met en avant l'importance d'adopter une convention de nommage cohérente entre Figma et le code. Il insiste sur le fait que cela facilite la compréhension pour les utilisateurs et les développeurs, réduisant ainsi les écarts et les confusions potentielles.
+### Simplification des Processus de Design
+Avec l'adoption des variables, le besoin de créer de multiples écrans pour chaque état possible d'une interface diminue considérablement. Cela allège non seulement le travail des designers mais facilite également la communication avec les équipes de développement et d'autres parties prenantes.
 
+## Impact et Avenir
+L'arrivée des variables marque un changement de paradigme dans le design UI/UX. Elle ouvre la porte à une plus grande expérimentation et innovation, permettant aux designers d'explorer des territoires inédits sans contraintes techniques majeures.
 
-### Cas particulier
-Une approche pragmatique est suggérée pour la gestion des variantes. Les composants complexes, tels que les états de chargement des boutons, qui sont rarement utilisés, peuvent être éliminés pour réduire le poids global du composant. Cela simplifie la conception et améliore la performance.
-
-
-### Slots
-La dernière stratégie recommande l'utilisation judicieuse de slots, une fonctionnalité permettant aux utilisateurs de remplacer facilement des parties d'un composant. Cette approche favorise la flexibilité, réduit la nécessité de détacher des instances, et facilite le prototypage rapide.
+En regardant vers l'avenir, on peut s'attendre à ce que Figma et d'autres outils de design continuent d'évoluer, offrant encore plus d'outils puissants et intuitifs. Les variables ne sont qu'un début dans cette évolution constante visant à rendre le design plus accessible, plus agile et plus puissant.
 
 ## Conclusion
-En conclusion, l'article insiste sur le fait que l'amélioration de l'expérience utilisateur des composants Figma nécessite une approche holistique, combinant des stratégies telles que la gestion des propriétés par défaut, l'alignement avec le code, le masquage des composants inutiles et l'utilisation judicieuse des slots pour créer des composants intuitifs, informatifs et cohérents
+L'introduction des variables dans Figma représente une avancée majeure dans le domaine du design UI/UX. En simplifiant le prototypage et en améliorant le design responsif, ces outils offrent aux designers une liberté et une efficacité inégalées. Alors que le paysage du design numérique continue d'évoluer, les variables Figma resteront probablement un élément clé dans l'arsenal de tout designer moderne.
+
+
+#### Article écrit en lisant deux autres articles
+Cet article est né deux articles que j'ai lu et qui mon grandement intéressées par le fait qu'elles expliquent comment les variables dans Figma améliorent le prototypage, rendant les designs plus interactifs. De plus, elles expliquent que les variables sont essentielles dans le design responsive, notamment pour gérer efficacement les breakpoints. Finalement, je trouve que ces deux sources offrent des conseils pratiques pour les amoureux du design et leurs donnent des outils pour faire des design modernes et efficaces.
+
+Articles:
+ 1. https://medium.com/design-bootcamp/figma-variables-made-simple-37af7a1a3578
+2.  https://medium.com/user-experience-design-1/using-figma-variables-for-breakpoints-eff321435306
+
+
+
+
