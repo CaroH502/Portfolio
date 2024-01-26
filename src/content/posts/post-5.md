@@ -9,6 +9,7 @@ tags: ["Frontend"]
 categories: ["Frontend"]
 ---
 
+
 # Composants Vue.js et Pratiques d'Accessibilité
 Les composants Vue.js sont au cœur de la création d'applications accessibles. En utilisant un balisage sémantique correct et en suivant les meilleures pratiques d'accessibilité, les développeurs peuvent garantir que leurs applications sont non seulement fonctionnelles mais également accessibles à tous les utilisateurs.
 
@@ -41,3 +42,6 @@ Les tests manuels sont indispensables pour assurer une accessibilité complète.
 
 # Conclusion et Appel à l'Action
 L'accessibilité doit être une priorité dans le développement web, et Vue.js offre les outils nécessaires pour créer des applications accessibles. En adoptant les pratiques discutées, les développeurs peuvent s'assurer que leurs applications sont non seulement conformes aux normes d'accessibilité, mais aussi inclusives et utilisables par tous.
+
+#### Sur quoi se base cet article ?
+Ces articles, trouvés sur Vue School (https://vueschool.io/articles/vuejs-tutorials/understanding-web-accessibility-in-vue-js/) et Borstch (https://borstch.com/blog/development/accessibility-features-and-best-practices-in-vuejs-3), sont particulièrement intéressants et utiles car ils permettent de comprendre l'accessibilité web dans le contexte de Vue.js. Ils offrent des conseils pratiques et des stratégies détaillées pour intégrer l'accessibilité dans le développement web, abordant des aspects techniques tels que le balisage sémantique, la gestion du focus, et les tests d'accessibilité. Ces ressources sont précieuses pour les développeurs souhaitant créer des applications web plus inclusives et accessibles, tout en se conformant aux meilleures pratiques et standards actuels.
