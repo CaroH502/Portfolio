@@ -7,12 +7,12 @@
         const entry = await getEntryBySlug("about", "index");
         const { Content } = await entry.render();
         const { title, description, meta_title, image, what_i_do } = entry.data;
-
+        
         import config from "../../src/config/config.json";
         import dragon1 from "../images/dragon1.png";
         import ikigai from "../images/ikigai.png";
-
-    
+        
+        
         ---
         
         <Base
@@ -23,60 +23,110 @@
         >
         <section class="section">
           <div class="container">
-              <div class="flex flex-wrap">
-                <!-- Colonne 1 : Texte -->
-                <div class="w-full md:w-1/2 ">
-                  <h2 class="mb-6 text-corail-100">A mon propos</h2>
-                  <p class="mb-8 sm:mb-0 md:mb-0 xl:mb-0 2xl:mb-0  text-justify">Je suis une future ingénieure des médias, prochainement diplômée en septembre 2024.
-                    Au cours de ma formation à la HEIG-VD, j'ai pu découvrir une vraie passion pour tout ce qui tourne autour l'interface graphique.
-                    <br><br>
-                    C'est pourquoi, je me suis spécialisée dans les domaines d'UX, d'UI et le développement front-end.
-                  </p>
-                </div>
-                
-                <!-- Colonne 2 : Image -->
-                <div class="w-full md:w-1/2 px-4 flex justify-center items-center">
-                  <img class="h-52 w-auto" src={dragon1.src} alt="dragon"/>
-                </div>
+            <div class="flex flex-wrap">
+              <!-- Colonne 1 : Texte -->
+              <div class="w-full md:w-1/2 ">
+                <h2 class="mb-6 text-corail-100">A mon propos</h2>
+                <p class="mb-8 sm:mb-0 md:mb-0 xl:mb-0 2xl:mb-0  text-justify">Je suis une future ingénieure des médias, prochainement diplômée en septembre 2024.
+                  Au cours de ma formation à la HEIG-VD, j'ai pu découvrir une vraie passion pour tout ce qui tourne autour l'interface graphique.
+                  <br><br>
+                  C'est pourquoi, je me suis spécialisée dans les domaines d'UX, d'UI et le développement front-end.
+                </p>
+              </div>
+              
+              <!-- Colonne 2 : Image -->
+              <div class="w-full md:w-1/2 px-4 flex justify-center items-center">
+                <img class="h-52 w-auto" src={dragon1.src} alt="dragon"/>
               </div>
             </div>
-          </section>
-          
-          <section class="section pt-0">
-            <div class="container">
-              <h4 class="text-corail-100 font-weight-700 mb-3">Ikigai</h4>
-              <p class="text-justify">De plus, lors d'un cours en Ingénierie des médias, j'ai pu confirmer mon choix de devenir spécialiste de l'interface graphique grâce au concepet japonais d'ikigai.
-                Je vous laisse le découvrir pour en savoir davantage sur les différentes composantes de ma “raison d'être” et “joie de vivre” (traduction d'ikigai).</p>
+          </div>
+        </section>
+        
+        <section class="section pt-0">
+          <div class="container">
+            <h4 class="text-corail-100 font-weight-700 mb-3">Ikigai</h4>
+            <p class="text-justify">De plus, lors d'un cours en Ingénierie des médias, j'ai pu confirmer mon choix de devenir spécialiste de l'interface graphique grâce au concepet japonais d'ikigai.
+              Je vous laisse le découvrir pour en savoir davantage sur les différentes composantes de ma “raison d'être” et “joie de vivre” (traduction d'ikigai).</p>
               <div>
                 <img class="my-12" src={ikigai.src}/>
               </div>
-            </div>
+              <h5>Mots-clefs en lien avec l'ikigai</h5>
+              <p>UX Design,
+                UI Design,
+                Interface utilisateur,
+                Expérience utilisateur,
+                Conception centrée sur l'utilisateur,
+                Prototypage,
+                Ergonomie,
+                Interaction utilisateur,
+                Test utilisateur,
+                Design d'information,
+                Navigation,
+                Interface graphique,
+                Convivialité,
+                Développement frontend,
+                Intégration web,
+                EyeTracking,
+                Figma,
+                GoogleFont,
+                Customer Journey Mapping,
+                Adobe,
+                Vue.js,
+                Tailwind,
+                Bootstrap,
+                CSS,
+                HTML,
+              </p>
+              <br>
+              <h5>Les 3 sous-domaines du spécialiste en interface</h5>
+              <h6>UX (Expérience Utilisateur) :</h6>
+              <ul>
+                  <li><span class="text-corail-100">- Recherche utilisateur : </span>L'UX design commence par la recherche des besoins et des comportements des utilisateurs afin de créer des interfaces qui répondent à leurs attentes.</li>
+                  <li><span class="text-corail-100">- Prototypage et tests : </span>Les designers UX créent des prototypes interactifs pour tester différentes solutions et recueillir des retours d'utilisateurs, ce qui permet d'itérer et d'améliorer l'interface.</li>
+                  <li><span class="text-corail-100">- Optimisation de l'ergonomie : </span>L'UX designer s'efforce de rendre l'interaction avec l'interface aussi fluide et intuitive que possible, en prenant en compte la disposition des éléments, la navigation, et la satisfaction de l'utilisateur.</li>
+              </ul>
+          
+              <h6>UI (Interface Utilisateur) :</h6>
+              <ul>
+                  <li><span class="text-corail-100">- Design visuel : </span>L'UI design se concentre sur l'aspect visuel de l'interface, y compris la typographie, les couleurs, les icônes et la mise en page, afin de créer une expérience esthétiquement attrayante.</li>
+                  <li><span class="text-corail-100">- Cohérence visuelle : </span>Les UI designers veillent à ce que tous les éléments de l'interface suivent un ensemble de règles et de normes visuelles pour garantir une cohérence à travers toutes les pages et les écrans.</li>
+                  <li><span class="text-corail-100">- Création de composants : </span>Ils développent des composants réutilisables tels que des boutons, des menus déroulants et des formulaires pour faciliter la création d'interfaces cohérentes et conviviales.</li>
+              </ul>
+          
+              <h6>Frontend (Développement Frontend) :</h6>
+              <ul>
+                  <li><span class="text-corail-100">- Langages web : </span>Les développeurs frontend utilisent des langages comme HTML, CSS et JavaScript pour créer la structure, le style et l'interactivité des pages web.</li>
+                  <li><span class="text-corail-100">- Intégration de design : </span>Ils intègrent les designs créés par les UI designers en transformant les fichiers graphiques en éléments interactifs fonctionnels.</li>
+                  <li><span class="text-corail-100">- Compatibilité multiplateforme : </span>Les développeurs frontend s'assurent que l'interface fonctionne de manière cohérente sur différents navigateurs et appareils en utilisant des techniques de développement adaptatif (responsive) et en testant la compatibilité.</li>
+              </ul>
+
+              </div>
             </section>
             <section class="section pt-0">
               <div class="container">
                 <h4 class="text-corail-100 font-weight-700 mb-3">Création de ce site</h4>
                 <p>
                   La création de ce portfolio a été une expérience particulièrement enrichissante pour moi. J'ai choisi d'utiliser le framework Astro pour ses multiples avantages  :
-              </p>
-              <br>
-              <ul>
+                </p>
+                <br>
+                <ul>
                   <li>
-                      - L'amélioration des performances du chargement initial et de la navigation.
+                    - L'amélioration des performances du chargement initial et de la navigation.
                   </li>
                   <li>
-                      - La simplification du développement front-end en favorisant la modularité.
+                    - La simplification du développement front-end en favorisant la modularité.
                   </li>
                   <li>
-                      - La contribution à une empreinte carbone réduite grâce à une approche "moins de JavaScript".
+                    - La contribution à une empreinte carbone réduite grâce à une approche "moins de JavaScript".
                   </li>
-              </ul>
-              <br>
-              <p class="text-justify ">En développant ce site, j'ai pu non seulement mettre en pratique mes compétences en UX et UI, 
+                </ul>
+                <br>
+                <p class="text-justify ">En développant ce site, j'ai pu non seulement mettre en pratique mes compétences en UX et UI, 
                   mais aussi approfondir mes connaissances en développement web front-end. Chaque étape de ce projet a été 
                   une opportunité d'apprentissage et de croissance professionnelle. Il représente non seulement mon parcours et mes compétences, 
                   mais aussi ma passion pour la création d'interfaces utilisateurs engageantes et intuitives, tout en utilisant 
                   les dernières technologies web.
-              </p>
+                </p>
               </div>
             </section>
           </Base>
